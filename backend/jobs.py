@@ -1,11 +1,10 @@
-# jobs.py
 JOBS = [
     {
         "job_id": 1,
         "title": "Video Editor (Premiere Pro) - Entertainment/Lifestyle & Vlogs",
         "description": "Video Editor with Adobe Premiere Pro experience; Splice & Dice, Rough Cut & Sequencing, 2D Animation.",
         "required_skills": ["Adobe Premiere", "Splice & Dice", "Rough Cut", "Sequencing", "2D Animation"],
-        "preferred_locations": ["Asia"],  # Asia preferred
+        "preferred_locations": ["Asia"],
         "budget": 2500,
         "rate_type": "monthly",
         "gender_preference": None
@@ -16,7 +15,7 @@ JOBS = [
         "description": "Producer/Video Editor — strong TikTok experience, Storyboarding, Sound Designing, Rough Cut & Sequencing, Filming.",
         "required_skills": ["TikTok", "Storyboarding", "Sound Designing", "Rough Cut", "Sequencing", "Filming"],
         "preferred_locations": ["New York", "US"],
-        "budget": [100, 150],  # hourly range
+        "budget": [100, 150],
         "rate_type": "hourly",
         "gender_preference": "Female"
     },
@@ -25,7 +24,7 @@ JOBS = [
         "title": "Chief Operations Officer - Ali Abdaal",
         "description": "COO for productivity/education channel: Strategy, Consulting, Business Operations, high energy and passion for educational content.",
         "required_skills": ["Strategy", "Consulting", "Business Operations", "Operations"],
-        "preferred_locations": [],  # open
+        "preferred_locations": [],
         "budget": None,
         "rate_type": None,
         "gender_preference": None
