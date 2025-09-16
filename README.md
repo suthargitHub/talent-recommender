@@ -46,6 +46,8 @@ A full-stack project that recommends the **top 10 candidates** for a given job d
 git clone https://github.com/<your-username>/talent-recommender.git
 cd talent-recommender
 
+
+2️⃣ Run the Backend (Flask API)
 cd backend
 python -m venv venv
 venv\Scripts\activate    # (Windows)
