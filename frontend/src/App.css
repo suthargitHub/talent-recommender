@@ -1,0 +1,150 @@
+/* ==== GLOBAL RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a); /* full dark gradient */
+  min-height: 100vh;
+  color: #f1f5f9; /* light neutral text */
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* ==== APP CONTAINER ==== */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+/* ==== HEADER ==== */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #38bdf8; /* cyan accent */
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+header h1:hover {
+  color: #0ea5e9;
+}
+
+/* ==== JOB SELECTION ==== */
+.job-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+  gap: 12px;
+}
+
+.job-selection label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #303842;
+}
+
+.job-selection select {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  background: #1e293b;
+  color: #f1f5f9;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.job-selection select:hover {
+  background: #334155;
+}
+
+.job-selection select:focus {
+  outline: none;
+  background: #0f172a;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+}
+
+/* ==== LOADING ==== */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #38bdf8;
+  margin-top: 25px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+/* ==== RECOMMENDATIONS ==== */
+.recommendations {
+  margin-top: 35px;
+  overflow-x: auto;
+}
+
+.recommendations h2 {
+  text-align: center;
+  color: #38bdf8;
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+/* ==== TABLE ==== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e293b;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+table:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.7);
+}
+
+thead {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+thead th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+tbody tr {
+  transition: background 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background: #334155;
+}
+
+tbody tr:hover {
+  background: #475569;
+}
+
+tbody td {
+  padding: 15px;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
